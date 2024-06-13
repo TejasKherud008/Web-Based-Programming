@@ -1,0 +1,45 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            var b = $("aa").attr("href");
+            alert(b);
+        })
+    </script>
+</head>
+<body>
+    <a href ="01.Html" id ="aa">click</a>
+    <a href ="01.html" id ="nn" alt = "open file 01">click</a>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            let a = $("#aa");
+            a.mouseover(function(){
+                a.attr("align","center");
+            });
+            let a2 = $("#nn");
+                a2.mouseover(function(){
+                    a2.attr({"align" : "center","title" : "go"})
+                })
+        })
+    </script>
+</head>
+<body>
+    <h1 id ="aa" align="right">Hello</h1>
+    <h3 id="nn">h3</h3>
+</body>
+</html>
